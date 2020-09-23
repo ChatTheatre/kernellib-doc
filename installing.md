@@ -5,7 +5,7 @@ layout: default
 
 (Note: these instructions are written with Linux or Mac in mind. Windows will need a bit of adapting. Pull requests welcome!)
 
-Let's assume you already have [DGD working fine](https://ChatTheatre.github.io/lpc-doc/installing.html). You'll also need Git and Telnet installed.
+Let's assume you already have [DGD working fine](https://ChatTheatre.github.io/lpc-doc/dgd/installing.html). You'll also need Git and Telnet installed.
 
 Ordinarily, the Kernellib will exist at two locations inside your application's directory structure. But it will also decide ***what that structure should be***, so I'll describe it as if you're creating a new Kernellib-based application. For an existing application, you can just copy the newest files into those two directories.
 
