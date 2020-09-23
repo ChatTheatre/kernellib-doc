@@ -12,10 +12,10 @@ Despite aiming to provide a more uniform interface than DGD, the Kernellib tries
 
 [Dgd](https://ChatTheatre.github.io/lpc-doc/) has [some unusual characteristics](https://ChatTheatre.github.io/lpc-doc/dgd/unusual.html). It also provides enormous flexibility. Kernellib provides control over those unusual characteristics, and provides sensible defaults on top of that flexibility.
 
-* [Features of Kernellib](./features.html)
-* [Installing the Kernellib](./installing.html)
-* [Default Kernellib Commands](./commands.html)
-* [Miscellaneous other documentation about the Kernellib](./miscellaneous.html)
+* [Features of Kernellib](./features.md)
+* [Installing the Kernellib](./installing.md)
+* [Default Kernellib Commands](./commands.md)
+* [Miscellaneous other documentation about the Kernellib](./miscellaneous.md)
 
 ## Copyright &amp; Status
 
