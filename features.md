@@ -11,6 +11,8 @@ DGD allows an object to query what code has called the current function. Through
 
 In general, the Kernellib divides code into "usr" directories, such as the highly-privileged /usr/System directory. Other directories can limit permissions of who can compile and instantiate their objects, and who can call into their API functions.
 
+* [More about Kernellib Permissions](./permissions.md)
+
 ## Persistence (Which Needs Upgradeability)
 
 One of the major functions of Kernellib is to manage persistence. DGD potentially allows fully recompiling all objects, but in practice that has some limitations. For somewhat-complicated reasons, you can't safely recompile a ***parent*** object that has other objects inherit from it while persisting its state (such as any data fields in the object.)
@@ -39,6 +41,8 @@ The Kernellib doesn't supply an object manager, but it does provide a few more e
 
 The Kernellib does track numbers of active objects and allows setting quotas for resource usage.
 
+* [More about Kernellib Object Management](./object_management.md)
+
 ## Resource Management
 
 The Kernellib's counting of resources extends to allowing quotas and limits on them. That can prevent having too many object instances active at a time, or allow setting limits on number of "ticks" (CPU usage) or callouts.
@@ -56,6 +60,8 @@ With an object manager, you can also set callbacks on objects to make them respo
 ## A Simple UI
 
 The Kernellib includes a very simple 'wiztool' - a set of commands for administrators of your application to query and manage objects. You'll want far more than this in the long term, but you'll be glad to have it in the beginning, and likely later as well.
+
+* [More about Kernellib Commands](./commands.md)
 
 ## Future-Proofing
 
