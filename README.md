@@ -15,6 +15,9 @@ Despite aiming to provide a more uniform interface than DGD, the Kernellib tries
 * [Features of Kernellib](./features.md)
 * [Installing the Kernellib](./installing.md)
 * [Default Kernellib Commands](./commands.md)
+* [Kernellib Permissions](./permissions.md)
+* [Resource Management](./resources.md)
+* [Object Management](./object_management.md)
 * [Miscellaneous other documentation about the Kernellib](./miscellaneous.md)
 
 ## Copyright &amp; Status
