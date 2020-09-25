@@ -14,11 +14,21 @@ Despite aiming to provide a more uniform interface than DGD, the Kernellib tries
 
 * [Features of Kernellib](./features.md)
 * [Installing the Kernellib](./installing.md)
+
+* [Kernellib Directory Structure](./directories.md)
 * [Default Kernellib Commands](./commands.md)
+
 * [Kernellib Permissions](./permissions.md)
 * [Resource Management](./resources.md)
 * [Object Management](./object_management.md)
+
 * [Miscellaneous other documentation about the Kernellib](./miscellaneous.md)
+
+## Older Documentation
+
+The old Phantasmal web site had a good set of documentation about building on the Kernellib. It's not perfect, some of it is outdated, but there's a lot there.
+
+[If you'd like to sift through it, here it is.](./phant/)
 
 ## Copyright &amp; Status
 

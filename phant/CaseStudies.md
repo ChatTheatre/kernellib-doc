@@ -1,0 +1,50 @@
+---
+title: Security Case Studies
+layout: default
+---
+
+## Security Case Studies Within and Around the Kernel MUDLib
+
+The best way to show you how one secures objects in a MUDLib is
+to look at examples of successful security precautions, and
+examples of securing objects with problems. DGD's Kernel MUDLib is
+an amazingly airtight piece of work, and so we'll use it for many
+of the success cases, and use programs that extend it to
+demonstrate the correction of security problems.
+<hr>
+
+## Case Studies
+
+### Names in the Kernel User Object
+
+An interesting phenomenon may be noted if one examines
+/kernel/obj/user.c and its parent program /kernel/lib/user.c. Each
+has a string called "name". This string is private in
+/kernel/lib/user.c and public in /kernel/obj/user.c. Why?
+
+Making the variable private with no setter function in
+/kernel/lib/user.c makes it secure even from its own child class.
+Had it not been declared private, then a child class could be
+declared which could access the variable. The use of the login()
+method in /kernel/lib/user.c demonstrates that the name variable is
+meant to be set once and only once, never changed, and at some
+point logout() will be called. This secures /kernel/lib/user's copy
+of name from child classes like /kernel/obj/user.
+
+So why's it matter? The simplest reason is that it keeps the
+name variable from being modified. If a child class modified it,
+then the values passed to USERD-&gt;login and USERD-&gt;logout
+would be different, causing problems for USERD and leaving an old
+login corresponding to no existing connection.
+
+We don't worry as much about login not being called as we might
+-- that case will still leave an extra spurious login which will
+need to be removed -- because the USERD checks to see if
+connections have been closed and because all of this can only be
+called from trusted system code.
+
+Even so, with a good objectd this example could be made even
+more secure -- the objectd could inform objects when they're
+destructed which would allow /kernel/lib/user to potentially know
+to logout automatically, probably with a warning message, if it
+wasn't logged out already when destructed.
