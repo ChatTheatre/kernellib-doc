@@ -27,10 +27,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ChatTheatre
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 markup: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-relative-links
 
 # Exclude from processing.
 # The following items will not be processed, by default.
