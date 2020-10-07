@@ -19,6 +19,7 @@ Despite aiming to provide a more uniform interface than DGD, the Kernellib tries
 * [Default Kernellib Commands](./commands.md)
 
 * [Kernellib Permissions](./permissions.md)
+* [Kernellib Security](./security.md)
 * [Resource Management](./resources.md)
 * [Object Management](./object_management.md)
 

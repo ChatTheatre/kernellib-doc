@@ -4,7 +4,7 @@ title: Permissions
 
 (This article is a stub.)
 
-## Security
+## Permissions
 
 Most of the security provided by the klib is enforced by functions in the auto object masking kfuns in dgd, such as anything to do with files or objects.
 
